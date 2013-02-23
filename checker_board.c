@@ -105,34 +105,43 @@ void draw(void)
             glVertex3f (side+5*side,side+k*side,0.0f);
             glVertex3f (0.0+5*side,side+k*side,0.0f);
         glEnd();
+
+        //col 7
+        glBegin(GL_QUADS);
+            glVertex3f (0.0+6*side, 0.0+j*side,0.0f);
+            glVertex3f (side+6*side,0.0+j*side,0.0f);
+            glVertex3f (side+6*side,side+j*side,0.0f);
+            glVertex3f (0.0+6*side,side+j*side,0.0f);
+        glEnd();
+
+        //col 8
+        glBegin(GL_QUADS);
+            glVertex3f (0.0+7*side,0.0+k*side,0.0f);
+            glVertex3f (side+7*side,0.0+k*side,0.0f);
+            glVertex3f (side+7*side,side+k*side,0.0f);
+            glVertex3f (0.0+7*side,side+k*side,0.0f);
+        glEnd();
         
+        //col 9
+        glBegin(GL_QUADS);
+            glVertex3f (0.0+8*side, 0.0+j*side,0.0f);
+            glVertex3f (side+8*side,0.0+j*side,0.0f);
+            glVertex3f (side+8*side,side+j*side,0.0f);
+            glVertex3f (0.0+8*side,side+j*side,0.0f);
+        glEnd();
         
+        //col 10
+        glBegin(GL_QUADS);
+            glVertex3f (0.0+9*side,0.0+k*side,0.0f);
+            glVertex3f (side+9*side,0.0+k*side,0.0f);
+            glVertex3f (side+9*side,side+k*side,0.0f);
+            glVertex3f (0.0+9*side,side+k*side,0.0f);
+        glEnd();
+
         j = j+2;
         k = k+2;
 
     }
-
-    
-    /*
-    //bottom right
-    glBegin(GL_QUADS);
-        glVertex3f (0.0+2*width, 0.0, 0.0f);
-        glVertex3f (side+2*width,0.0,0.0f);
-        glVertex3f (side+2*width,side,0.0f);
-        glVertex3f (0.0+2*width,side,0.0f);
-    glEnd();
-
-    
-    
-    //top right
-    glBegin(GL_QUADS);
-        glVertex3f (0.0+2*height, 0.0+2*width, 0.0f);
-        glVertex3f (side+2*height,0.0+2*width,0.0f);
-        glVertex3f (side+2*height,side+2*width,0.0f);
-        glVertex3f (0.0+2*height,side+2*width,0.0f);
-    glEnd();
-    
-    */
     
     glFlush();
     
