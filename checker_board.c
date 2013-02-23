@@ -46,10 +46,10 @@ void draw(void)
     //set colour of square to white
     glColor3f (1.0, 1.0, 1.0);
     
-    GLfloat height = 5.0;
-    GLfloat width = 5.0;
+    //the width of each square
     GLfloat side = 5.0;
     
+    //counter variables
     int j=0;
     int k=1;
     
